@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 project_name = 'signLanguage'
 
 list_of_files = [
-    "data/.gitkeep"
+    "data/.gitkeep",
     f"{project_name}/__init__.py",
     f"{project_name}/component/__init__.py",
     f"{project_name}/component/data_ingestion.py",
