@@ -97,7 +97,7 @@ class DataValidation:
             logging.info(f"Data validation artifact: {data_validation_artifact}")
 
             # if status:
-            shutil.copy(self.data_ingestion_artifact.data_zip_file_path, os.getcwd())
+            # shutil.copy(self.data_ingestion_artifact.data_zip_file_path, os.getcwd())
 
             return data_validation_artifact
         except Exception as e:
