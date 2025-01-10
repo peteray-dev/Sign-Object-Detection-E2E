@@ -25,3 +25,15 @@ class DataIngestionConfig:
     gdrive_download_url: str = GDRIVE_DOWNLOAD_URL
 
     use_gdrive: str = USE_GDRIVE
+
+
+@dataclass 
+class DataValidationConfig:
+    data_validation_dir: str = os.path.join(
+        training_pipeline_config.artifact_dir, DATA_VALIDATION_DIR_NAME
+    )
+
+
+    valid_status_file_dir: str = os.path.join(data_validation_dir, DATA_VALIDATION_STATUS_FILE)
+
+    required_file_list = DATA_VALIDATION_ALL_REQUIRED_FILES
