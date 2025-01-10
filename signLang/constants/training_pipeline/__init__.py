@@ -11,3 +11,7 @@ DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 
 DATA_DOWNLOAD_URL: str = "jonathanoheix/face-expression-recognition-dataset"
+
+GDRIVE_DOWNLOAD_URL: str ="https://drive.google.com/uc?id=177Cu3-Ae2Rv3SUsrbWOdfu8fW-W7a7SZ"
+
+USE_GDRIVE = True

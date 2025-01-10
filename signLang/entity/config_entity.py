@@ -21,3 +21,7 @@ class DataIngestionConfig:
         data_ingestion_dir, DATA_INGESTION_FEATURE_STORE_DIR
     )
     data_download_url: str = DATA_DOWNLOAD_URL
+
+    gdrive_download_url: str = GDRIVE_DOWNLOAD_URL
+
+    use_gdrive: str = USE_GDRIVE

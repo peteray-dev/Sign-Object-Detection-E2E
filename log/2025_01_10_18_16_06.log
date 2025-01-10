@@ -1,0 +1,11 @@
+[2025-01-10 18:16:07,200] root - INFO - Enterned into the adata ingestion method in the trainig pipeline
+[2025-01-10 18:16:07,200] root - INFO - getting started with data from the url
+[2025-01-10 18:16:07,215] root - INFO - Initiating data ingestion in the Data Ingestion class
+[2025-01-10 18:16:07,215] root - INFO - Downloading file from Google Drive https://drive.google.com/uc?id=177Cu3-Ae2Rv3SUsrbWOdfu8fW-W7a7SZ into artifacts\01_10_25_18_16_07\data_ingestion\downloaded_data.zip
+[2025-01-10 18:18:26,561] root - INFO - Downloaded file from Google Drive into artifacts\01_10_25_18_16_07\data_ingestion\downloaded_data.zip
+[2025-01-10 18:18:26,566] root - INFO - data downloaded from google drive
+[2025-01-10 18:19:16,088] root - INFO - Extracted zip file from artifacts\01_10_25_18_16_07\data_ingestion\downloaded_data.zip into directory artifacts\01_10_25_18_16_07\data_ingestion\feature_store
+[2025-01-10 18:19:16,104] root - INFO - Completed data ingestion
+[2025-01-10 18:19:16,104] root - INFO - Data Ingestion Artifacts: DataIngestionArtifact(data_zip_file_path='artifacts\\01_10_25_18_16_07\\data_ingestion\\downloaded_data.zip', feature_store_path='artifacts\\01_10_25_18_16_07\\data_ingestion\\feature_store')
+[2025-01-10 18:19:16,104] root - INFO - got the data from the url
+[2025-01-10 18:19:16,104] root - INFO - Exited rom the start data ingestion method from the Training pipeline class
