@@ -1,0 +1,10 @@
+[2025-01-10 17:10:18,797] root - INFO - Enterned into the adata ingestion method in the trainig pipeline
+[2025-01-10 17:10:18,797] root - INFO - getting started with data from the url
+[2025-01-10 17:10:18,813] root - INFO - Initiating data ingestion in the Data Ingestion class
+[2025-01-10 17:10:18,813] root - INFO - Downloading dataset jonathanoheix/face-expression-recognition-dataset into artifacts\01_10_25_17_10_18\data_ingestion\face-expression-recognition-dataset.zip
+[2025-01-10 17:13:27,080] root - INFO - Downloaded dataset jonathanoheix/face-expression-recognition-dataset into artifacts\01_10_25_17_10_18\data_ingestion\face-expression-recognition-dataset.zip
+[2025-01-10 17:15:37,048] root - INFO - Extracted zip file from artifacts\01_10_25_17_10_18\data_ingestion\face-expression-recognition-dataset.zip into directory artifacts\01_10_25_17_10_18\data_ingestion\feature_store
+[2025-01-10 17:15:37,094] root - INFO - Completed data ingestion
+[2025-01-10 17:15:37,094] root - INFO - Data Ingestion Artifacts: DataIngestionArtifact(data_zip_file_path='artifacts\\01_10_25_17_10_18\\data_ingestion\\face-expression-recognition-dataset.zip', feature_store_path='artifacts\\01_10_25_17_10_18\\data_ingestion\\feature_store')
+[2025-01-10 17:15:37,094] root - INFO - got the data from the url
+[2025-01-10 17:15:37,094] root - INFO - Exited rom the start data ingestion method from the Training pipeline class
