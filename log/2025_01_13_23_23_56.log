@@ -1,0 +1,5 @@
+[2025-01-13 23:24:00,007] werkzeug - WARNING -  * Debugger is active!
+[2025-01-13 23:24:00,030] werkzeug - INFO -  * Debugger PIN: 456-762-699
+[2025-01-13 23:24:13,133] werkzeug - INFO - 127.0.0.1 - - [13/Jan/2025 23:24:13] "GET / HTTP/1.1" 200 -
+[2025-01-13 23:24:42,816] werkzeug - INFO - 127.0.0.1 - - [13/Jan/2025 23:24:42] "POST /predict HTTP/1.1" 200 -
+[2025-01-13 23:24:55,792] werkzeug - INFO -  * Detected change in 'C:\\Users\\user\\OneDrive\\Desktop\\face\\Sign-Object-Detection-E2E\\signLang\\component\\model_trainer.py', reloading

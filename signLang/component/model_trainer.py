@@ -45,7 +45,7 @@ class Modeltrainer:
 
             # Run training using YOLOv5
             train_command = (
-                f"cd yolov5 && python train.py --img 48 --batch {self.model_trainer_config.batch_size} "
+                f"cd yolov5 && python train.py --img 416 --batch {self.model_trainer_config.batch_size} "
                 f"--epochs {self.model_trainer_config.no_epochs} --data ../{self.data_ingestion_artifact.feature_store_path}/images/data.yaml "
                 f"--cfg ./models/custom_{model_config_file_name}.yaml --weights {self.model_trainer_config.weight_name} "
                 f"--name yolov5s_results --cache"

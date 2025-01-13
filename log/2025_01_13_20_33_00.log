@@ -1,0 +1,7 @@
+[2025-01-13 20:33:22,295] werkzeug - WARNING -  * Debugger is active!
+[2025-01-13 20:33:22,315] werkzeug - INFO -  * Debugger PIN: 456-762-699
+[2025-01-13 20:33:22,422] werkzeug - INFO - 127.0.0.1 - - [13/Jan/2025 20:33:22] "GET / HTTP/1.1" 200 -
+[2025-01-13 20:33:22,429] werkzeug - INFO - 127.0.0.1 - - [13/Jan/2025 20:33:22] "GET / HTTP/1.1" 200 -
+[2025-01-13 20:33:56,716] werkzeug - INFO - 127.0.0.1 - - [13/Jan/2025 20:33:56] "POST /predict HTTP/1.1" 200 -
+[2025-01-13 20:34:49,095] werkzeug - INFO - 127.0.0.1 - - [13/Jan/2025 20:34:49] "POST /predict HTTP/1.1" 200 -
+[2025-01-13 20:35:14,032] werkzeug - INFO -  * Detected change in 'C:\\Users\\user\\Desktop\\face\\Sign-Object-Detection-E2E\\app.py', reloading

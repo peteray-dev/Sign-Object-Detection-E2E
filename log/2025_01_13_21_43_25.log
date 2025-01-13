@@ -1,0 +1,22 @@
+[2025-01-13 21:43:27,529] botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2025-01-13 21:43:27,815] root - INFO - Enterned into the start data ingestion method in the trainig pipeline
+[2025-01-13 21:43:27,816] root - INFO - getting started with data from the url
+[2025-01-13 21:43:27,824] root - INFO - Initiating data ingestion in the Data Ingestion class
+[2025-01-13 21:43:27,826] root - INFO - Downloading file from Google Drive https://drive.google.com/uc?id=10iHvwk510kQiw45XN9zEBjBzY1mRpAz5 into artifacts\01_13_25_21_43_26\data_ingestion\downloaded_data.zip
+[2025-01-13 21:43:32,092] root - INFO - Downloaded file from Google Drive into artifacts\01_13_25_21_43_26\data_ingestion\downloaded_data.zip
+[2025-01-13 21:43:32,093] root - INFO - data downloaded from google drive
+[2025-01-13 21:43:32,252] root - INFO - Extracted zip file from artifacts\01_13_25_21_43_26\data_ingestion\downloaded_data.zip into directory artifacts\01_13_25_21_43_26\data_ingestion\feature_store
+[2025-01-13 21:43:32,253] root - INFO - Completed data ingestion
+[2025-01-13 21:43:32,253] root - INFO - Data Ingestion Artifacts: DataIngestionArtifact(data_zip_file_path='artifacts\\01_13_25_21_43_26\\data_ingestion\\downloaded_data.zip', feature_store_path='artifacts\\01_13_25_21_43_26\\data_ingestion\\feature_store')
+[2025-01-13 21:43:32,253] root - INFO - got the data from the url
+[2025-01-13 21:43:32,253] root - INFO - Exited rom the start data ingestion method from the Training pipeline class
+[2025-01-13 21:43:32,254] root - INFO - Enterned into the start data validation method in the training pipeline
+[2025-01-13 21:43:32,254] root - INFO - Entered initiate_data_validation method of DataValidation class
+[2025-01-13 21:43:32,257] root - INFO - Exited initiate_data_validation method of DataValidation class
+[2025-01-13 21:43:32,257] root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True)
+[2025-01-13 21:43:32,260] root - INFO - perform the data validation operation
+[2025-01-13 21:43:32,260] root - INFO - exited the start data validation method of training Pipeline class
+[2025-01-13 21:43:32,260] root - INFO - Entered initiate_model_trainer method of ModelTrainer class
+[2025-01-13 21:43:32,264] root - INFO - Number of classes: 7
+[2025-01-13 21:43:32,264] root - INFO - Model configuration file name: yolov5s
+[2025-01-13 21:43:32,278] root - INFO - Read yaml file successfully

@@ -12,11 +12,11 @@ DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 
 DATA_DOWNLOAD_URL: str = "jonathanoheix/face-expression-recognition-dataset"
 
-GDRIVE_DOWNLOAD_URL: str ="https://drive.google.com/uc?id=1G36QmJg16YmZAoxoZ0kv5W1yP3EUSe15"
+GDRIVE_DOWNLOAD_URL: str ="https://drive.google.com/uc?id=10iHvwk510kQiw45XN9zEBjBzY1mRpAz5"
 
 USE_GDRIVE = True
-# https://drive.google.com/file/d//view?usp=sharing
 
+# https://drive.google.com/file/d/10iHvwk510kQiw45XN9zEBjBzY1mRpAz5/view?usp=sharing
 """
 Data Validation Constant
 """
@@ -34,7 +34,7 @@ MODEL_TRAINER_DIR_NAME: str = 'model_trainer'
 
 MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = 'yolov5s.pt'
 
-MODEL_TRAINER_NO_EPOCH: int = 1
+MODEL_TRAINER_NO_EPOCH: int = 100
 
 MODEL_TRAINER_BATCH_SIZE: int = 32
 
