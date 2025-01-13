@@ -63,13 +63,13 @@ class Modeltrainer:
             shutil.copy(best_model_src, final_model_dst)
 
             # Clean up intermediate directories and files
-            shutil.rmtree("yolov5/runs", ignore_errors=True)
-            if os.path.exists("train"):
-                shutil.rmtree("train", ignore_errors=True)
-            if os.path.exists("test"):
-                shutil.rmtree("test", ignore_errors=True)
-            if os.path.exists("data.yaml"):
-                os.remove("data.yaml")
+            # shutil.rmtree("yolov5/runs", ignore_errors=True)
+            # if os.path.exists("train"):
+            #     shutil.rmtree("train", ignore_errors=True)
+            # if os.path.exists("test"):
+            #     shutil.rmtree("test", ignore_errors=True)
+            # if os.path.exists("data.yaml"):
+            #     os.remove("data.yaml")
 
             # Create and return the artifact
             model_trainer_artifact = ModelTrainerArtifact(

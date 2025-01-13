@@ -37,3 +37,11 @@ MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = 'yolov5s.pt'
 MODEL_TRAINER_NO_EPOCH: int = 1
 
 MODEL_TRAINER_BATCH_SIZE: int = 32
+
+
+"""
+Model pusher
+"""
+
+BUCKET_NAME:str = "sign-lang-39"
+S3_MODEL_NAME:str = "best.pt"

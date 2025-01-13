@@ -1,0 +1,35 @@
+[2025-01-13 19:11:00,095] botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2025-01-13 19:11:00,663] root - INFO - Enterned into the start data ingestion method in the trainig pipeline
+[2025-01-13 19:11:00,663] root - INFO - getting started with data from the url
+[2025-01-13 19:11:00,675] root - INFO - Initiating data ingestion in the Data Ingestion class
+[2025-01-13 19:11:00,676] root - INFO - Downloading file from Google Drive https://drive.google.com/uc?id=1G36QmJg16YmZAoxoZ0kv5W1yP3EUSe15 into artifacts\01_13_25_19_10_58\data_ingestion\downloaded_data.zip
+[2025-01-13 19:11:11,844] root - INFO - Downloaded file from Google Drive into artifacts\01_13_25_19_10_58\data_ingestion\downloaded_data.zip
+[2025-01-13 19:11:11,845] root - INFO - data downloaded from google drive
+[2025-01-13 19:11:29,602] root - INFO - Extracted zip file from artifacts\01_13_25_19_10_58\data_ingestion\downloaded_data.zip into directory artifacts\01_13_25_19_10_58\data_ingestion\feature_store
+[2025-01-13 19:11:29,612] root - INFO - Completed data ingestion
+[2025-01-13 19:11:29,612] root - INFO - Data Ingestion Artifacts: DataIngestionArtifact(data_zip_file_path='artifacts\\01_13_25_19_10_58\\data_ingestion\\downloaded_data.zip', feature_store_path='artifacts\\01_13_25_19_10_58\\data_ingestion\\feature_store')
+[2025-01-13 19:11:29,612] root - INFO - got the data from the url
+[2025-01-13 19:11:29,612] root - INFO - Exited rom the start data ingestion method from the Training pipeline class
+[2025-01-13 19:11:29,615] root - INFO - Enterned into the start data validation method in the training pipeline
+[2025-01-13 19:11:29,615] root - INFO - Entered into initiating data validation class
+[2025-01-13 19:11:29,619] root - INFO - dataset.yaml created successfully at artifacts\01_13_25_19_10_58\data_ingestion\feature_store\images\data.yaml
+[2025-01-13 19:11:29,621] root - INFO - Class Mapping: {'angry': 0, 'disgust': 1, 'fear': 2, 'happy': 3, 'neutral': 4, 'sad': 5, 'surprise': 6}
+[2025-01-13 19:11:42,724] root - INFO - Labels generated successfully!
+[2025-01-13 19:11:42,724] root - INFO - Exited initiate data validation method of data validation class
+[2025-01-13 19:11:42,725] root - INFO - Data validation artifact: DataValidationArtifact(validation_status=True)
+[2025-01-13 19:11:42,747] root - INFO - perform the data validation operation
+[2025-01-13 19:11:42,747] root - INFO - exited the start data validation method of training Pipeline class
+[2025-01-13 19:11:42,747] root - INFO - Entered initiate_model_trainer method of ModelTrainer class
+[2025-01-13 19:11:42,758] root - INFO - Number of classes: 7
+[2025-01-13 19:11:42,758] root - INFO - Model configuration file name: yolov5s
+[2025-01-13 19:11:42,758] root - INFO - Read yaml file successfully
+[2025-01-13 19:25:54,331] root - INFO - Exited initiate_model_trainer method of ModelTrainer class
+[2025-01-13 19:25:54,337] root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='yolov5/best.pt')
+[2025-01-13 19:25:54,343] root - INFO - Entered initiate_model_pusher method of Modelpusher class
+[2025-01-13 19:25:54,346] root - INFO - Entered the upload_file method of S3Operations class
+[2025-01-13 19:25:54,346] root - INFO - Uploading yolov5/best.pt file to best.pt file in sign-lang-39 bucket
+[2025-01-13 19:26:38,220] root - INFO - Uploaded yolov5/best.pt file to best.pt file in sign-lang-39 bucket
+[2025-01-13 19:26:38,220] root - INFO - Remove is set to False, not deleted the file
+[2025-01-13 19:26:38,220] root - INFO - Exited the upload_file method of S3Operations class
+[2025-01-13 19:26:38,220] root - INFO - Uploaded best model to s3 bucket
+[2025-01-13 19:26:38,220] root - INFO - Exited initiate_model_pusher method of ModelTrainer class
