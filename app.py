@@ -53,6 +53,22 @@ def predictRoute():
     return jsonify(result)
 
 
+
+
+
+@app.route("/live", methods=['GET'])
+@cross_origin()
+def predictLive():
+    try:
+        os.system("cd yolov5/ && python detect.py --weights best.pt --img 416 --conf 0.5 --source 0")
+        os.system("rm -rf yolov5/runs")
+        return "Camera starting!!" 
+
+    except ValueError as val:
+        print(val)
+        return Response("Value not found inside  json data")
+    
+
 if __name__ == "__main__":
     clApp = ClientApp()
     app.run(host="0.0.0.0", port=8080, debug=True)

@@ -63,7 +63,7 @@ class Modeltrainer:
             shutil.copy(best_model_src, final_model_dst)
 
             # Clean up intermediate directories and files
-            # shutil.rmtree("yolov5/runs", ignore_errors=True)
+            shutil.rmtree("yolov5/runs", ignore_errors=True)
             # if os.path.exists("train"):
             #     shutil.rmtree("train", ignore_errors=True)
             # if os.path.exists("test"):
