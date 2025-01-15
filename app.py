@@ -37,7 +37,7 @@ def predictRoute():
         image = request.json['image']
         decodeImage(image, clApp.filename)
 
-        os.system("cd yolov5 && python detect.py --weights best.pt --img 416 --conf 0.25 --source ../data/inputImage.jpg")
+        os.system("cd yolov5 && python detect.py --weights best.torchscript --img 416 --conf 0.25 --source ../data/inputImage.jpg")
 
         # Dynamically get the latest output image
         output_dir = max(glob.glob("yolov5/runs/detect/*"), key=os.path.getctime)
@@ -60,7 +60,7 @@ def predictRoute():
 @cross_origin()
 def predictLive():
     try:
-        os.system("cd yolov5/ && python detect.py --weights best.pt --img 416 --conf 0.5 --source 0")
+        os.system("cd yolov5/ && python detect.py --weights best.torchscript --img 416 --conf 0.5 --source 0")
         os.system("rm -rf yolov5/runs")
         return "Camera starting!!" 
 

@@ -1,0 +1,14 @@
+[2025-01-15 15:24:35,502] botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2025-01-15 15:24:35,788] root - INFO - Enterned into the start data ingestion method in the trainig pipeline
+[2025-01-15 15:24:35,788] root - INFO - getting started with data from the url
+[2025-01-15 15:24:35,798] root - INFO - Initiating data ingestion in the Data Ingestion class
+[2025-01-15 15:24:35,799] root - INFO - Downloading file from Google Drive https://drive.google.com/uc?id=1-XVmtjwZPTe3bluh98MmYt0FgNzJ9n2D into artifacts\01_15_25_15_24_34\data_ingestion\downloaded_data.zip
+[2025-01-15 15:24:42,030] root - INFO - Downloaded file from Google Drive into artifacts\01_15_25_15_24_34\data_ingestion\downloaded_data.zip
+[2025-01-15 15:24:42,030] root - INFO - data downloaded from google drive
+[2025-01-15 15:24:42,495] root - INFO - Extracted zip file from artifacts\01_15_25_15_24_34\data_ingestion\downloaded_data.zip into directory artifacts\01_15_25_15_24_34\data_ingestion\feature_store
+[2025-01-15 15:24:42,496] root - INFO - Completed data ingestion
+[2025-01-15 15:24:42,496] root - INFO - Data Ingestion Artifacts: DataIngestionArtifact(data_zip_file_path='artifacts\\01_15_25_15_24_34\\data_ingestion\\downloaded_data.zip', feature_store_path='artifacts\\01_15_25_15_24_34\\data_ingestion\\feature_store')
+[2025-01-15 15:24:42,496] root - INFO - got the data from the url
+[2025-01-15 15:24:42,496] root - INFO - Exited rom the start data ingestion method from the Training pipeline class
+[2025-01-15 15:24:42,497] root - INFO - Enterned into the start data validation method in the training pipeline
+[2025-01-15 15:24:42,498] root - INFO - Entered into initiating data validation class

@@ -35,13 +35,13 @@ class DataValidation:
                     validation_status = False
                     os.makedirs(self.data_validation_config.data_validation_dir, exist_ok=True)
                     with open(self.data_validation_config.valid_status_file_dir, 'w') as f:
-                        f.write(f"Validation status: {validation_status}")
+                        f.write(f"Validation status: {validation_status}\n")
 
                 else:
                     validation_status = True
                     os.makedirs(self.data_validation_config.data_validation_dir, exist_ok=True)
                     with open(self.data_validation_config.valid_status_file_dir, 'w') as f:
-                        f.write(f"Validation status: {validation_status}")
+                        f.write(f"Validation status: {validation_status}\n")
             
             return validation_status
 
@@ -243,8 +243,8 @@ class DataValidation:
             logging.info("Exited initiate data validation method of data validation class")
             logging.info(f"Data validation artifact: {data_validation_artifact}")
 
-            if status:
-                shutil.copy(self.data_ingestion_artifact.data_zip_file_path, os.getcwd())
+            # if status:
+            #     shutil.copy(self.data_ingestion_artifact.data_zip_file_path, os.getcwd())
 
             return data_validation_artifact
         except Exception as e:

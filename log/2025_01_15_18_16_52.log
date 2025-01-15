@@ -1,0 +1,5 @@
+[2025-01-15 18:16:53,773] werkzeug - WARNING -  * Debugger is active!
+[2025-01-15 18:16:53,776] werkzeug - INFO -  * Debugger PIN: 188-388-932
+[2025-01-15 18:17:04,793] werkzeug - INFO - 127.0.0.1 - - [15/Jan/2025 18:17:04] "POST /predict HTTP/1.1" 200 -
+[2025-01-15 18:17:34,471] werkzeug - INFO - 127.0.0.1 - - [15/Jan/2025 18:17:34] "POST /predict HTTP/1.1" 200 -
+[2025-01-15 18:18:03,066] werkzeug - INFO -  * Detected change in 'C:\\Users\\user\\OneDrive\\Desktop\\face\\Sign-Object-Detection-E2E\\app.py', reloading

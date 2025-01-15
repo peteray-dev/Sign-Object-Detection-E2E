@@ -1,0 +1,18 @@
+[2025-01-15 15:14:56,802] werkzeug - WARNING -  * Debugger is active!
+[2025-01-15 15:14:56,807] werkzeug - INFO -  * Debugger PIN: 456-762-699
+[2025-01-15 15:15:02,937] botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2025-01-15 15:15:03,413] root - INFO - Enterned into the start data ingestion method in the trainig pipeline
+[2025-01-15 15:15:03,414] root - INFO - getting started with data from the url
+[2025-01-15 15:15:03,425] root - INFO - Initiating data ingestion in the Data Ingestion class
+[2025-01-15 15:15:03,426] root - INFO - Downloading file from Google Drive https://drive.google.com/uc?id=1-XVmtjwZPTe3bluh98MmYt0FgNzJ9n2D into artifacts\01_15_25_15_14_55\data_ingestion\downloaded_data.zip
+[2025-01-15 15:15:10,040] root - INFO - Downloaded file from Google Drive into artifacts\01_15_25_15_14_55\data_ingestion\downloaded_data.zip
+[2025-01-15 15:15:10,040] root - INFO - data downloaded from google drive
+[2025-01-15 15:15:10,718] root - INFO - Extracted zip file from artifacts\01_15_25_15_14_55\data_ingestion\downloaded_data.zip into directory artifacts\01_15_25_15_14_55\data_ingestion\feature_store
+[2025-01-15 15:15:10,718] root - INFO - Completed data ingestion
+[2025-01-15 15:15:10,719] root - INFO - Data Ingestion Artifacts: DataIngestionArtifact(data_zip_file_path='artifacts\\01_15_25_15_14_55\\data_ingestion\\downloaded_data.zip', feature_store_path='artifacts\\01_15_25_15_14_55\\data_ingestion\\feature_store')
+[2025-01-15 15:15:10,719] root - INFO - got the data from the url
+[2025-01-15 15:15:10,719] root - INFO - Exited rom the start data ingestion method from the Training pipeline class
+[2025-01-15 15:15:10,720] root - INFO - Enterned into the start data validation method in the training pipeline
+[2025-01-15 15:15:10,720] root - INFO - Entered into initiating data validation class
+[2025-01-15 15:15:10,722] werkzeug - INFO - 127.0.0.1 - - [15/Jan/2025 15:15:10] "GET /train HTTP/1.1" 200 -
+[2025-01-15 15:22:38,594] werkzeug - INFO -  * Detected change in 'C:\\Users\\user\\OneDrive\\Desktop\\face\\Sign-Object-Detection-E2E\\app.py', reloading
