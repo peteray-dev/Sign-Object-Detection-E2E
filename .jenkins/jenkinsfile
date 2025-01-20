@@ -22,16 +22,25 @@ pipeline {
         script {
           sh 'aws ecr get-login-password --region eu-north-1 | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.eu-north-1.amazonaws.com'
         }
+      }
+    }
 
+    stage('Install Dependencies') {
+      steps {
+        script {
+          sh '''
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --timeout 100 --retries 5 --index-url https://pypi.org/simple -r requirements.txt
+          '''
+        }
       }
     }
 
     stage('Build Image') {
       steps {
         script {
-          sh 'docker build -t ${ECR_REPOSITORY}:latest .'
+          sh 'docker build --build-arg PIP_INDEX_URL=https://pypi.org/simple --build-arg PIP_TIMEOUT=100 --build-arg PIP_RETRIES=5 -t ${ECR_REPOSITORY}:latest .'
         }
-
       }
     }
 
@@ -40,14 +49,20 @@ pipeline {
         script {
           sh 'docker push ${ECR_REPOSITORY}:latest'
         }
-
       }
     }
 
     stage('Continuous Deployment') {
       steps {
         sshagent(['ssh_key']) {
-          sh "ssh -o StrictHostKeyChecking=no -l ubuntu 13.49.119.66 'cd /home/ubuntu/ && wget https://raw.githubusercontent.com/peteray-dev/Sign-Object-Detection-E2E/refs/heads/master/docker-compose.yml && export IMAGE_NAME=${ECR_REPOSITORY}:latest && aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com && docker compose up -d '"
+          sh '''
+          ssh -o StrictHostKeyChecking=no -l ubuntu 13.49.119.66 '
+          cd /home/ubuntu/ && 
+          wget https://raw.githubusercontent.com/peteray-dev/Sign-Object-Detection-E2E/refs/heads/master/docker-compose.yml &&
+          export IMAGE_NAME=${ECR_REPOSITORY}:latest &&
+          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com &&
+          docker compose up -d '
+          '''
         }
       }
     }
