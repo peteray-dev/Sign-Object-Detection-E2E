@@ -46,7 +46,7 @@ pipeline {
 
     stage('Continuous Deployment') {
       steps {
-        sshagent(['ssh_key']) {
+        sshagent(['ssh_keys']) {
           sh "ssh -o StrictHostKeyChecking=no -l ubuntu 13.49.119.66 'cd /home/ubuntu/ && wget https://raw.githubusercontent.com/peteray-dev/Sign-Object-Detection-E2E/refs/heads/master/docker-compose.yml && export IMAGE_NAME=${ECR_REPOSITORY}:latest && aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.us-east-1.amazonaws.com && docker compose up -d '"
         }
       }
