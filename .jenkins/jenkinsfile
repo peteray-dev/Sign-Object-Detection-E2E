@@ -29,8 +29,8 @@ pipeline {
       steps {
         script {
           sh '''
-          python -m pip install --upgrade pip setuptools wheel
-          pip install --timeout 100 --retries 5 --index-url https://pypi.org/simple -r requirements.txt
+          python3 -m pip install --upgrade pip setuptools wheel
+          pip3 install --timeout 100 --retries 5 --index-url https://pypi.org/simple -r requirements.txt
           '''
         }
       }
