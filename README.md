@@ -1,13 +1,14 @@
 # Sign-Object-Detection-E2E
 
-<video width="640" height="360" controls>
-  <source src="https://vimeo.com/1049268805/32bde1a654" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+
+
+https://github.com/user-attachments/assets/471feb7d-c4b8-49a8-9650-a25ed8dc3246
+
+
 <!-- conda create -n signLang python=3.7 -y -->
 
 <!-- conda activate signLang -->
-
 <!-- pip install -r requirements.txt -->
 
 ## Workflows
