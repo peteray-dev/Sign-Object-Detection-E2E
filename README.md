@@ -1,6 +1,13 @@
 # Sign-Object-Detection-E2E
 
 ## Emotional AI for Mental Health Insight
+
+# Watch the Demo
+
+
+
+https://github.com/user-attachments/assets/471feb7d-c4b8-49a8-9650-a25ed8dc3246
+
 ### Project Overview
 This project aims to leverage computer vision and artificial intelligence (AI) to gain mental health insights through facial expression analysis. The app captures facial expressions and determines the user's emotional state, including emotions such as happiness, fear, disgust, surprise, anger, and neutrality.
 
@@ -63,11 +70,6 @@ Using Docker, the application is packaged into containers, ensuring a seamless e
 
 
 
-# Watch the Demo
-
-
-
-https://github.com/user-attachments/assets/471feb7d-c4b8-49a8-9650-a25ed8dc3246
 
 
 <!-- conda create -n signLang python=3.7 -y -->
