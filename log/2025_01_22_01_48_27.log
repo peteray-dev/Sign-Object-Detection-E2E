@@ -1,0 +1,4 @@
+[2025-01-22 01:48:29,828] werkzeug - WARNING -  * Debugger is active!
+[2025-01-22 01:48:29,844] werkzeug - INFO -  * Debugger PIN: 188-388-932
+[2025-01-22 01:48:47,497] werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 01:48:47] "GET / HTTP/1.1" 200 -
+[2025-01-22 01:48:48,007] werkzeug - INFO - 127.0.0.1 - - [22/Jan/2025 01:48:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
